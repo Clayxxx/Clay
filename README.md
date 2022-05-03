@@ -18,7 +18,7 @@ $pip install mechanize
 
 $git clone https://github.com/Clayxxx/Crack
 
-$cd Crack
+$cd Clay
 
 $python Crack.py
 
