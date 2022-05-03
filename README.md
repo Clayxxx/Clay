@@ -16,7 +16,7 @@ $pip install rich
 
 $pip install mechanize 
 
-$git clone https://github.com/Clayxxx/Crack
+$git clone https://github.com/Clayxxx/Clay
 
 $cd Clay
 
