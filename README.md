@@ -20,5 +20,7 @@ $git clone https://github.com/Clayxxx/Clay
 
 $cd Clay
 
+$git pull
+
 $python Crack.py
 
